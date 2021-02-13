@@ -1,0 +1,23 @@
+.row{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cards{
+display: inline-block;
+width: 100px;
+height:100px;
+background-color: #51dce0;
+gap: 10px;
+border-radius: 5px;
+border: 2px solid #e7d9ea;
+cursor: pointer;
+
+}
+
+.cards:hover{
+box-shadow: inset 0px 0px 0px 1px;
+box-sizing:border-box;
+
+}
