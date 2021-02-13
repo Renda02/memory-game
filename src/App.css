@@ -18,10 +18,17 @@ body {
   height: 400px;
   width: 400px;
   flex-direction: row;
+ 
 }
 
 .cube {
-  border-radius: 5px;
-  margin: 5px;
+cursor: pointer;
+  margin: 2px;
   box-sizing: border-box;
 }
+
+.cube:hover {
+  box-shadow: inset 0px 0px 0px 1px;
+  box-sizing: border-box;
+}
+
