@@ -10,5 +10,18 @@ body {
   align-items: center;
   padding: 50px;
   line-height: 1;
-  font-family: "Patrick Hand", sans-serif;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 400px;
+  flex-direction: row;
+}
+
+.cube {
+  border-radius: 5px;
+  margin: 5px;
+  box-sizing: border-box;
 }
