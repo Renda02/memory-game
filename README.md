@@ -9,6 +9,8 @@ A simple application where user has to spot a different color, clicks on it whic
 - To generate a random number on the tile which where the odd color will show I used math.random() [refer]('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random').
 - On the functionality of the game by an onClick function which when the user clicks the odd color ,it increment to another steps.
 - I then added a counter using useState which adds score as the user goes to next steps.
+<hr/>
+[Live Demo.]('https://eye-test-game.netlify.app/')
 
 ## Getting Started with App
 
