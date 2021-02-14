@@ -33,7 +33,8 @@ function Board() {
   const onSpecialCubeClick = () => {
     if (score === 4) {
       let name = prompt("What is your name?");
-      alert(`Congratulations, ${name} . You've completed the eye!!`);
+      alert(`Congratulations , ${name} . You've completed the game!! `);
+      alert(`Your score is ${score}.`)
     } else {
       setSize(size + 1);
       setScore(score + 1);
