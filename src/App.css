@@ -10,6 +10,7 @@ body {
   align-items: center;
   padding: 50px;
   line-height: 1;
+  font-family: "Roboto", sans-serif;
 }
 
 .board {
@@ -18,22 +19,21 @@ body {
   height: 400px;
   width: 400px;
   flex-direction: row;
- 
- 
 }
 
-@media (max-width:920px){
-  .board{  padding:10px;
-  height:300px;
-  width:300px;
+@media (max-width: 920px) {
+  .board {
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+  }
+  .cube {
+    margin: 1px;
+  }
 }
-.cube{
-  margin:1px;
-}}
-
 
 .cube {
-cursor: pointer;
+  cursor: pointer;
   margin: 2px;
   box-sizing: border-box;
 }
@@ -42,4 +42,3 @@ cursor: pointer;
   box-shadow: inset 0px 0px 0px 1px;
   box-sizing: border-box;
 }
-

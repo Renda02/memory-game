@@ -32,9 +32,9 @@ function Board() {
   // go to next step
   const onSpecialCubeClick = () => {
     if (score === 4) {
-      alert("Congrarulations! You won");
+      let name = prompt("What is your name?");
+      alert(`Congratulations, ${name} . You've completed the game!!`);
     } else {
-      //end the game????
       setSize(size + 1);
       setScore(score + 1);
     }
@@ -62,7 +62,7 @@ function Board() {
   return (
     <>
       <div>
-        <h3>Score: {score}</h3>
+        <h3>Scoreboard: {score}</h3>
 
         <div className="board">
           {cubes.map((cb) => (

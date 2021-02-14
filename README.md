@@ -1,15 +1,16 @@
-##Memory Game
+##Matrix color game
 A user has to spot a different color and clicks on it to go to the next stage and if the user clicks the wrong color the user loses.
 
-##Details on the game
--The game was built using React hooks-useState and color was fetch on from a [color pakage]('https://www.npmjs.com/package/color).
+###Details on the game
 
-- The tile was developed using 
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-}
+-To generate the tiles/board I used dynamic styling and for loop.
+-To  generate the colors of the tile I installed  [color package]('https://www.npmjs.com/package/color) and to get the odd color I applied saturation.
+-To generate a random number on the tile which where the odd color will show I used math.random() [refer]('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random').
+- I added the functionality of the game by adding an onClick function which when the use clicks the odd color ,it increment to another steps.
+-I then added a counter using useState which adds score as the user goes to next steps.
 
-# Getting Started with Create React App
+
+# Getting Started with App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
