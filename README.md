@@ -1,6 +1,6 @@
 ## Matrix color game
 
-A simple application where user has to spot a different color, clicks on it which then next stage . Think of this application as simple an eye-test.
+A simple application where user has to spot a different color, clicks on it which then next stage . Think of this application as simple an eye-test. [Live Demo]('https://eye-test-game.netlify.app/')
 
 ## `Details on the game`
 
@@ -10,7 +10,7 @@ A simple application where user has to spot a different color, clicks on it whic
 - On the functionality of the game by an onClick function which when the user clicks the odd color ,it increment to another steps.
 - I then added a counter using useState which adds score as the user goes to next steps.
 
-- [Live Demo]('https://eye-test-game.netlify.app/')
+[Live Demo]('https://eye-test-game.netlify.app/')
 
 ## Getting Started with App
 
