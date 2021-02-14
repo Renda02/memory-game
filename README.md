@@ -1,3 +1,14 @@
+##Memory Game
+A user has to spot a different color and clicks on it to go to the next stage and if the user clicks the wrong color the user loses.
+
+##Details on the game
+-The game was built using React hooks-useState and color was fetch on from a [color pakage]('https://www.npmjs.com/package/color).
+
+- The tile was developed using 
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

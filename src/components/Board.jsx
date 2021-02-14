@@ -29,10 +29,18 @@ function Board() {
 
   //console.log(randomCubeIndex, "randomCubeIndex");
 
+  
   // go to next step
   const onSpecialCubeClick = () => {
     setSize(size + 1);
     setScore(score + 1);
+
+    if(score === 4){
+      alert("Congrarulations! You won")
+    }
+  else{
+  
+  }
   };
 
   for (let i = 0; i < size * size; i++) {
@@ -48,16 +56,21 @@ function Board() {
         onclick: () => alert("Oops! wrong color. Try again"),
       });
     }
+
   }
+
+ 
 
   //cube sizing
   const width = `calc(${(1 / size) * 100}% - ${2 * size}px)`;
   const height = `calc(${(1 / size) * 100}% - ${2 * size}px`;
 
+  
   return (
     <>
       <div>
         <h3>Score: {score}</h3>
+        
         <div className="board">
           {cubes.map((cb) => (
             <div

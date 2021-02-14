@@ -19,7 +19,18 @@ body {
   width: 400px;
   flex-direction: row;
  
+ 
 }
+
+@media (max-width:920px){
+  .board{  padding:10px;
+  height:300px;
+  width:300px;
+}
+.cube{
+  margin:1px;
+}}
+
 
 .cube {
 cursor: pointer;
