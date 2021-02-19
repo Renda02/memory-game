@@ -18,6 +18,7 @@ function getRandomArbitrary(min, max) {
 function Board() {
   const [size, setSize] = useState(2);
   const [score, setScore] = useState(0);
+  const [disabled,setDisabled]=useState(false)
 
   const cubes = [];
 
