@@ -3,12 +3,18 @@ import React, { useState } from "react";
 import Color from "color";
 
 const colorList = [
-  "#1abc9c",
-  "#2ecc71",
+  "#ffda79",
   "#e74c3c",
+  "#1abc9c",
+  "#84817a",
+  "#2ecc71",
+  "#ccae62",
+
+  "#f7f1e3",
   "#2c3e50",
   "#9b59b6",
   "#5e3458",
+  "#474787",
 ];
 
 function getRandomArbitrary(min, max) {
@@ -18,7 +24,7 @@ function getRandomArbitrary(min, max) {
 function Board() {
   const [size, setSize] = useState(2);
   const [score, setScore] = useState(0);
-  const [disabled,setDisabled]=useState(false)
+  const [stop, setStop] = useState(0);
 
   const cubes = [];
 
@@ -30,16 +36,22 @@ function Board() {
 
   //console.log(randomCubeIndex, "randomCubeIndex");
 
+  //stop game
+  const stopGame = () => {
+    setStop();
+    setScore(0);
+    setSize(2);
+  };
+
   // go to next step
   const onSpecialCubeClick = () => {
-    if (score === 4) {
-      let name = prompt("What is your name?");
-      alert(`Congratulations , ${name} . You've completed the game!! `);
-      alert(`Your score is ${score}.`)
-    } else {
-      setSize(size + 1);
-      setScore(score + 1);
-    }
+    // if (score === 4) {
+    //let name = prompt("What is your name?");
+    //alert(`Congratulations , ${name} . You've completed the game!! `);
+    //alert(`Your score is ${score}.`)
+    //} else {
+    setSize(size + 1);
+    setScore(score + 1);
   };
 
   for (let i = 0; i < size * size; i++) {
@@ -52,7 +64,7 @@ function Board() {
     } else {
       cubes.push({
         color: cubeColor,
-        onclick: () => alert("Oops! wrong color. Try again"),
+        onclick: stopGame,
       });
     }
   }
