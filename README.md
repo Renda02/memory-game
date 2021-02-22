@@ -15,7 +15,7 @@ A simple application where user has to spot a different color, clicks on it whic
 
 
 ## To do 
-- Also added timer which will stop the game when the time is up.
+- Improving the counter timer which will stop the game when the time is up.
 
 [Live Demo]('https://eye-test-game.netlify.app/')
 
