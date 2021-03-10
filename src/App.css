@@ -43,3 +43,15 @@ body {
   box-shadow: inset 0px 0px 0px 1px;
   box-sizing: border-box;
 }
+
+
+button{
+  display: inline-block;
+  background: #FFE600;
+  color: black;
+  padding: .5em 1.25em;
+  text-align: center;
+  text-decoration: none;
+cursor: pointer;
+margin-right: .5em;
+}

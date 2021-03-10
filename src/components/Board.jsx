@@ -10,7 +10,6 @@ const colorList = [
   "#ccae62",
   "#2ecc71",
   "#84817a",
-
   "#f7f1e3",
   "#9b59b6",
   "#5e3458",
@@ -96,7 +95,7 @@ function Board() {
 
   const restartWithDiff = (diff) => {
     setDifficulty(diff);
-    stopGame();
+    setSize(2);
   };
 
   //cube sizing
@@ -108,8 +107,8 @@ function Board() {
       <div>
         <h2>Difficulty</h2>
         <div>
-          <button onClick={() => restartWithDiff(2)}>2</button>
-          <button onClick={() => restartWithDiff(3)}>3</button>
+          <button  className="btn-one" onClick={() => restartWithDiff(2)}>Level 1</button>
+          <button className="btn-two"  onClick={() => restartWithDiff(3)}>Level 2</button>
         </div>
         <h2>Time Remaining:{counter}</h2>
         <h3>Scoreboard: {score}</h3>
